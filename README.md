@@ -65,7 +65,7 @@ scope = "cpp"
 prefix = "for"
 description = "insert 'for'"
 body = """
-for(int ${1:i} = 0; ${1:i} < ${2:n}; i++){
+for(int ${1:i} = 0; ${1:i} < ${2:n}; ${i:1}++){
     $2
 }
 """
@@ -91,7 +91,7 @@ trim_trailing_blank_lines = true
     "prefix": "for",
     "description": "insert 'for'",
     "body": [
-      "for(int ${1:i} = 0; ${1:i} < ${2:n}; i++){",
+      "for(int ${1:i} = 0; ${1:i} < ${2:n}; ${i:1}++){",
       "    $2",
       "}"
     ]
