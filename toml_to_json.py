@@ -53,7 +53,7 @@ def process_body_data(data: dict[str, Any]) -> dict[str, Any]:
     body = ''
     if 'source' in data:
         with open(data.pop('source'), encoding='utf-8') as source_file:
-            body = source_file.readlines()
+            body = source_file.read().splitlines()
     else:
         body = list(data['body'].split('\n'))
     if 'range' in data:
