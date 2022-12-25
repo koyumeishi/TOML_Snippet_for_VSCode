@@ -29,7 +29,7 @@ configurations. These are attributes that are not available in
 original VSCode JSON snippets.
 
 ```
-source = "SOURCE_FILE"            # If the source attribute is specified, the body attribute will be ignored
+source = "SOURCE_FILE"            # Load from SOURCE_FILE. If the source attribute is specified, the body attribute will be ignored
 range = [START_LINE, END_LINE]    # Use lines from START_LINE to END_LINE only (inclusive, 1-indexed)
 trim_leading_blank_lines = false  # Removes leading blank lines. Default is false.
 trim_trailing_blank_lines = false # Removes trailing blank lines. Default is false
@@ -65,7 +65,7 @@ scope = "cpp"
 prefix = "for"
 description = "insert 'for'"
 body = """
-for(int ${1:i} = 0; ${1:i} < ${2:n}; ${i:1}++){
+for(int ${1:i} = 0; ${1:i} < ${2:n}; ${1:i}++){
     $2
 }
 """
@@ -91,7 +91,7 @@ trim_trailing_blank_lines = true
     "prefix": "for",
     "description": "insert 'for'",
     "body": [
-      "for(int ${1:i} = 0; ${1:i} < ${2:n}; ${i:1}++){",
+      "for(int ${1:i} = 0; ${1:i} < ${2:n}; ${1:i}++){",
       "    $2",
       "}"
     ]

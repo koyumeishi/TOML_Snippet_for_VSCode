@@ -131,7 +131,7 @@ scope = "cpp"
 prefix = "for"
 description = "insert 'for'"
 body = """
-for(int ${1:i} = 0; ${1:i} < ${2:n}; ${i:1}++){
+for(int ${1:i} = 0; ${1:i} < ${2:n}; ${1:i}++){
     $2
 }
 """
