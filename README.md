@@ -30,7 +30,7 @@ original VSCode JSON snippets.
 
 ```toml
 source = "SOURCE_FILE"            # If the source attribute is specified, the body attribute will be ignored
-range = [START_LINE, END_LINE]    # Use lines from START_LINE to END_LINE only (inclusive, 1-indexed)
+range = \[START_LINE, END_LINE\]    # Use lines from START_LINE to END_LINE only (inclusive, 1-indexed)
 trim_leading_blank_lines = false  # Removes leading blank lines. Default is false.
 trim_trailing_blank_lines = false # Removes trailing blank lines. Default is false
 ```
